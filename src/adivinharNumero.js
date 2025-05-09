@@ -9,8 +9,13 @@
 
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  const numero = Math.floor(Math.random() * (max + 1));
+
+  if (numero === palpite) {
+    return "Acertou!";
+  } else {
+    return "Errou! Tente novamente!";
+  }
 }
-
-
 // NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { adivinharNumero };
